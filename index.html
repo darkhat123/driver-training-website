@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "css/bootstrap.css" />
+    <!--link to access bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <!--We have opted to create the navbar and provide the contents within it as a container to provide padding for the brand name-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <!--the first container will be concerned with storing the entire contents of the header, this was opted as container to auto size itself-->
+        <div class="container">
+
+        
+            <a href="index.html" class="navbar-brand"><img src = "img/dash-logo.png" alt ="sandys logo"></a>
+        
+        <!--now we will create a button which whill toggle between two states, we will pass it the continer with our links so it knows what to change-->
+            <button 
+                class="navbar-toggler"
+                type = "button" 
+                data-bs-toggle = "collapse" 
+                data-bs-target = "#navmenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id = "navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a href="prices.html" class="navbar-link text-light text-decoration-none"><b>Prices and Services</b></a>
+                    </li>
+                    <li class ="nav-item px-2">
+                        <a href="about.html" class="navbar-link text-light text-decoration-none"><b>About</b></a>
+                    </li>
+
+                    <li class = "nav-item px-2">
+                        <a href="#Instructor Training" class="navbar-link text-light text-decoration-none"><b>Instructor Training</b></a>
+                    </li>
+
+                    <li class = "nav-item px-2">
+                        <a href="contact.php" class="navbar-link text-light text-decoration-none"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        
+        
+    
+    </nav>
+
+
+<!--SHOWCASE-->
+    <!--we will make the text begin from the start on anything below a small screen, once bigger it acts as normal-->
+    <section class="bg-danger text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <!--We are using the flexbox here so that the image and text remain inline, however once on mobile it will return to normal-->
+            <div class = "d-sm-flex">
+                <div>
+                <!--we will include a span with a colour class to this text to keep it inline with the rest of the elements while changing the colour-->
+                    <h1>Learn how to drive with a  <span class = "text-dark" >Grade A instructor</span></h1>
+
+                    <!--for easy readability we pass a margin of 4 on each y axis of the paragraph to isolate it-->
+                    <p class = "my-4">
+                        Over here at <b>Dash</b> our Main objective is to provide our clients with the essential skills
+                        necessary to Obtain their license. This spans from stellar lessons provided by Advanced
+                        Driving instructors with years of knowledge and extremely impressive pass rates
+                    </p>
+
+                    <button type="button" class="btn btn-info">Enquire Now</button>
+                </div>
+            <!--in order to maintain our image within the conatiner we can give it a width-->
+            <img class = "img-fluid w-50 d-none d-md-block" src = "img/car.png" alt = "driver logo">
+            </div>
+        </div>
+    
+    </section>
+
+
+<!--ICONS AND INFO-->
+    <section class = "p-5 bg-secondary">
+<!--we will first create a container within this section to place all cards in-->
+        <div class = "container">
+<!--within that wrapper we can add another wrapper telling each tow to align the text to the center-->
+            <div class = "row text-center">
+<!--next we pass it a breaking point for mobile, when above medium all columns sit beside each toher
+but on mobile all items will be stacked on top-->
+                <div class = "col-md">
+                    <div class = "card bg-light text-dark">
+                        <div class ="card-body text-center">
+
+                            <div class = "h1 mb-3">
+                                <i class = "bi bi-chat-square-dots"></i>
+                            </div>
+                            <h3 class = "card-title mb-3">Helpful instructors</h3>
+                            <p class = "card-text">Many of our customers will tell you how our instructors remain professional whilst also being your emotional support throughout your learning experience. Check out our customer Reviews!
+                            </p>
+
+                            <a href ="#" class = "btn btn-info">Read more</a>
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md">
+                    <div class = "card bg-light text-dark">
+                        <div class = "card-body text-center">
+                            <div class = "h1 mb-3">
+                                <i class ="bi bi-hourglass-bottom"></i>
+                            </div>
+
+                            <h3 class = "card-title mb-3">Effective Lessons</h3>
+                            <p class = "card-text">Each Lesson is specially crafted to meet your specific needs as a learner, from the basics to Pass day we ensure you have expert Advice. Take a look at a typical day with <b>DASH </b> driver training
+                            </p>
+
+                            <a href ="#" class = "btn btn-info">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class = "col-md">
+                    <div class = "card bg-light text-dark">
+                        <div class ="card-body text-center">
+
+                            <div class = "h1 mb-3">
+                                <i class = "bi bi-percent"></i>
+                            </div>
+                            <h3 class = "card-title mb-3">Excellent pass rates</h3>
+                            <p class = "card-text">Our instructors make it their goal to train every individual till <b>they</b> make the decision they would like to take the test! Check out our facebook to see our large gallery of passed students
+
+                            </p>
+
+                            <a href ="#" class = "btn btn-info">Read more</a>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!--Getting Prepared-->
+
+    <section id = "prep" class ="bg-danger text-dark">
+        <div class = "container">
+            <div class = "row align-items-center justify-content-between">
+                <div class ="col-md p-5">
+                    <h2>Getting Started</h2>
+                    <p>At <b>DASH</b> we understand how daunting taking your first lesson can be, so we compiled a section dedicated to showing you everything you need to know before you begin your Learner journey
+
+                    </p>
+
+                    <p>
+                        We strongly recommend that if you dont already have your provisional license that you take the time to study hard for your theory test. This means when you come to us we can get you booked in and begin your journey to acheiving your <b>Practical Driving Test Certificate</b>
+                    </p>
+
+                    <a href = "#" class = "btn btn-danger mt-3">
+                        <i class ="bi bi-chevron-right">Read more</i>
+                    </a>
+                </div>
+
+                <div class = "col-md">
+                    <img class = "img-fluid d-none d-md-block" src ="img/albert-einstein-1.jpg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--FAQ's-->
+    <section id = "Faq" class = "bg-secondary">
+        <div class = "container">
+            <div class = "row align-items-center justify-content-between">
+                <div class = "col-md p-5">
+                    <h2><b>Frequently Asked Questions</b></h2>
+                    <a href = "#" class = "text-dark" alt = "Application for provisional driving license">How to apply for your Provisional Driving license</a> </br>
+                    <a href = "#" class ="text-dark" alt ="Link to apply for Theory test">How to book your Theory Test</a> </br>
+                    <a href = "#" class ="text-dark" alt ="Highway code information">The Highway code manual</a>
+                </div>
+
+                <div class ="col-sm">
+                    <iframe width="400" height ="315" src="https://www.youtube.com/embed/kLIYK8c5VKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer Nav-->
+
+    <section>
+        <div class ="container-fluid bg-dark">
+            <div class = "row align-items-center justify-content-between">
+                <div class ="col-md p-5 text-light">
+                    <h3><strong>Contact info</strong></h3>
+                    <p>Telephone: 07789660365</p>
+                    <p>Email: Greghillan10@gmail.com</p>
+                    <p>Address: 14 Grougar Drive, Kilmarnock, KA3 1UL</p>
+
+                    <i class = "bi bi-facebook">
+                        <a href ="https://www.facebook.com/Sandyhillandriving" alt = "Sandy Hillans Facebook Page"></a>
+                    </i>
+
+                </div>
+
+                <div class ="col-md">
+                    <img class = "img-fluid w-50 d-none d-md-block" src = "img/Untitled design.png" alt ="Certificates">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src = "js/bootstrap.js"></script>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    
+</body>
+</html>

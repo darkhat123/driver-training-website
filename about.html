@@ -1,0 +1,157 @@
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "css/bootstrap.css" />
+    <!--link to access bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+
+
+    <!--NAVBAR-->
+    <!--We have opted to create the navbar and provide the contents within it as a container to provide padding for the brand name-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <!--the first container will be concerned with storing the entire contents of the header, this was opted as container to auto size itself-->
+        <div class="container">
+
+        
+            <a href="index.html" class="navbar-brand"><img src = "img/dash-logo.png" alt ="sandys logo"></a>
+        
+        <!--now we will create a button which whill toggle between two states, we will pass it the continer with our links so it knows what to change-->
+            <button 
+                class="navbar-toggler"
+                type = "button" 
+                data-bs-toggle = "collapse" 
+                data-bs-target = "#navmenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id = "navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a href="prices.html" class="navbar-link text-light text-decoration-none"><b>Prices and Services</b></a>
+                    </li>
+                    <li class ="nav-item px-2">
+                        <a href="about.html" class="navbar-link text-light text-decoration-none"><b>About</b></a>
+                    </li>
+
+                    <li class = "nav-item px-2">
+                        <a href="#Instructor Training" class="navbar-link text-light text-decoration-none"><b>Instructor Training</b></a>
+                    </li>
+
+                    <li class = "nav-item px-2">
+                        <a href="contact.php" class="navbar-link text-light text-decoration-none"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        
+        
+    
+    </nav>
+
+    <section>
+        <div class = "container-fluid text-center bg-danger">
+
+<!--here we tell the browser to load the specific image dependant on the viewport-->
+            <h1 class="display-1 text-center text-light text-decoration-underline text-uppercase"><b>About us</b></h1>
+            <figure>            
+                <img class = "img-fluid" src = "https://ik.imagekit.io/eccktgb8fra/Copy_of_Congratulations_Batch_2022__vloNQLGH8aa.png"
+                    srcset ="https://ik.imagekit.io/eccktgb8fra/Copy_of_Congratulations_Batch_2022__vloNQLGH8aa.png?tr:w-500 500w
+                            https://ik.imagekit.io/eccktgb8fra/Copy_of_Congratulations_Batch_2022__vloNQLGH8aa.png?tr:w-800 800w
+                            https://ik.imagekit.io/eccktgb8fra/Copy_of_Congratulations_Batch_2022__vloNQLGH8aa.png?tr:w-1024 1024w">
+                <figcaption class = "text-light">The road to success is a long and Arduos one</figcaption>
+            </figure>
+
+            
+        </div>
+    </section>
+
+    <section>
+        <div class = "alert alert-info">
+            <p><strong>DASH</strong> Driver training is a two-man fleet of Skilled instructors, infact our name comes from
+            both our instructors initials! We try not to be <b>too</b> serious during our lessons and are more than happy to share in the patter, 
+            after all youre not just paying for lessons, youre paying for a patient, dedicated and friendly instructor! Thats not to say we wont be firm
+            if we need you to focus we will always give a helpful nudge, only cause on test day we want your senses to be honed in and your reaction time sharp! We utilise various areas within the ayrshire district 
+            to allow for the many different roads our learners will encounter on test day, making sure that they have had plenty of time and practice to become confident in each area before moving onto different manouvers and lessons!  </p>
+        </div>
+    </section>
+    <section>
+        <div class = "container-fluid bg-danger">
+
+            <h2 class ="text-center text-warning">Our Instructors</h2>
+            <div class = "row text-center g-4">
+
+            
+                <div class = "col-md-6">
+                    <div class = "card bg-dark">
+                        <div class = "card-body text-center text-warning">
+                            <img src = "https://randomuser.me/api/portraits/men/11.jpg" alt = "no 1 instructor" class ="rounded-circle">
+                            <h3 class = "card-title">Sandy Hillan</h3>
+                            <p class = "card-text">With over 4 years of experience as an instrcutor and Grade A DSA instructor Sandy has the expertise and knowledge to walk you through your learner journey from Day 1 to Pass date. If you want a Friendly and approachable instructor then look no further! To help you get in contact with him quickly he has stated <a href ="https://www.facebook.com/dashdrivertraining/">Facebook</a> as his preferred contact method</p>
+                            <i class = "bi bi-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md-6">
+                    <div class = "card bg-dark">
+                        <div class = "card-body text-center text-warning">
+                            <img src = "https://randomuser.me/api/portraits/men/12.jpg" alt = "no 1 instructor" class ="rounded-circle">
+                            <h3 class = "card-title">Sandy Hillan</h3>
+                            <p class = "card-text">With over 4 years of experience as an instrcutor and Grade A DSA instructor Sandy has the expertise and knowledge to walk you through your learner journey from Day 1 to Pass date. If you want a Friendly and approachable instructor then look no further! To help you get in contact with him quickly he has stated <a href ="https://www.facebook.com/dashdrivertraining/">Facebook</a> as his preferred contact method</p>
+                            <i class = "bi bi-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+
+        
+    </section>
+
+
+     <!--Footer Nav-->
+
+    <section>
+        <div class ="container-fluid bg-dark">
+            <div class = "row align-items-center justify-content-between">
+                <div class ="col-md p-5 text-light">
+                    <h3><strong>Contact info</strong></h3>
+                    <p><b>Telephone</b>: 07789660365</p>
+                    <p><b>Email</b>: Greghillan10@gmail.com</p>
+                    <p><b>Address</b>: 14 Grougar Drive, Kilmarnock, KA3 1UL</p>
+
+                    <i class = "bi bi-facebook">
+                        <a href ="https://www.facebook.com/Sandyhillandriving" alt = "Sandy Hillans Facebook Page"></a>
+                    </i>
+
+                </div>
+
+                <div class ="col-md">
+                    <img class = "img-fluid w-50 d-none d-md-block" src = "img/Untitled design.png" alt ="Certificates">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src = "js/bootstrap.js"></script>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+</body>
+
+</html>

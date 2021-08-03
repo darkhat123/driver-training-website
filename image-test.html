@@ -1,0 +1,35 @@
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="css/bootstrap.css" />
+</head>
+
+<!--using the carouse caption allows us to place text over inages, wodnerful for banners!-->
+<body>
+    <section>
+        <div class = "container text-center bg-secondary">
+
+            <h1 class = "carousel-caption">Hello world</h1>
+<!--here we tell the browser to load the specific image dependant on the viewport-->            
+            <img class = "img-fluid" src = "https://ik.imagekit.io/eccktgb8fra/Scotland-Road-Trip-Quiraing_yl4h0tANZ.jpg"
+                srcset ="https://ik.imagekit.io/eccktgb8fra/Scotland-Road-Trip-Quiraing_yl4h0tANZ.jpg?tr:w-500 500w
+                        https://ik.imagekit.io/eccktgb8fra/Scotland-Road-Trip-Quiraing_yl4h0tANZ.jpg?tr:w-800 800w
+                        https://ik.imagekit.io/eccktgb8fra/Scotland-Road-Trip-Quiraing_yl4h0tANZ.jpg?tr:w-1024 1024w">
+        
+        </div>
+    </section>
+
+
+
+
+    <script src = "js/bootstrap.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <script src = "js/contact.js"></script>
+</body>
+</html>
