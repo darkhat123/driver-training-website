@@ -1,0 +1,197 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel = "stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>    
+        
+        
+    
+        <!--NAVBAR-->
+        <!--We have opted to create the navbar and provide the contents within it as a container to provide padding for the brand name-->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <!--the first container will be concerned with storing the entire contents of the header, this was opted as container to auto size itself-->
+            <div class="container-fluid">
+    
+            
+                <a href="index.html" class="navbar-brand"><img src = "https://ik.imagekit.io/eccktgb8fra/Copy_of_Copy_of_DASH_DOtphMBdd.png" alt ="sandys logo"></a>
+            
+            <!--now we will create a button which whill toggle between two states, we will pass it the continer with our links so it knows what to change-->
+                <button 
+                    class="navbar-toggler"
+                    type = "button" 
+                    data-bs-toggle = "collapse" 
+                    data-bs-target = "#navmenu">
+    
+                    <span class="navbar-toggler-icon"></span>
+    
+                </button>
+                <div class="collapse navbar-collapse" id = "navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item px-2">
+                            <a href="prices-1.html" class="navbar-link text-light text-decoration-none"><b>Prices and Services</b></a>
+                        </li>
+                        <li class ="nav-item px-2">
+                            <a href="about.html" class="navbar-link text-light text-decoration-none"><b>About</b></a>
+                        </li>
+    
+                        <li class = "nav-item px-2">
+                            <a href="instructor-training.html" class="navbar-link text-light text-decoration-none"><b>Instructor Training</b></a>
+                        </li>
+    
+                        <li class = "nav-item px-2">
+                            <a href="contact.php" class="navbar-link text-light text-decoration-none"><b>Contact Us</b></a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
+            
+            
+        
+        </nav>
+    <!--Banner and CTA-->    
+        <section class ="text-dark">
+            <div class = "container-fluid text-center">
+                <div>
+               
+                  <img class = "img-fluid" src ="https://ik.imagekit.io/eccktgb8fra/pixeltrue-save-money-1_vvYN1XweC4.png"
+                    
+                      srcset="https://ik.imagekit.io/eccktgb8fra/pixeltrue-save-money-1_vvYN1XweC4.png?tr=w-500 500w,
+                      https://ik.imagekit.io/eccktgb8fra/pixeltrue-save-money-1_vvYN1XweC4.png?tr=w-800 800w,
+                      https://ik.imagekit.io/eccktgb8fra/pixeltrue-save-money-1_vvYN1XweC4.png?tr=w-900 1280w">
+                
+    
+                </div>
+    
+            </div>
+            
+    
+          <div class ="container-fluid bg-info">
+            <div class = "container-fluid text-center">
+              <h1 class = "display-1" style = "font-family: 'overpass', sans-serif;">PRICES</h1>
+            </div>
+            <div class ="row text-center">
+              <div class = "col-md-4 p-5">
+                <div class = "card bg-light">
+                  <img src = "https://ik.imagekit.io/eccktgb8fra/undraw_city_driver_re_0x5e_YdjZNUUZLP.png" alt = "intensive driving image">
+                  <div class = "card-body">
+                    <h5 class = "card-title">Intensive driving</h5>
+
+                    <p class = "card-text">These are the main lessons that our instructors provide. These are suited to students completely new to driving or simply needing a rework of their driving behaviour. The name comes from how intensive the lessons will be in order to ensure you acheive your practical driving test certificate.</p>
+                  </div>
+
+                  <ul class = "list-group list-group-flush">
+                    <li class = "list-group-item">10 Lessons: £350<p>Suitable for someone who has failed a previous test, or is almost test ready!</p></li>
+                    <li class = "list-group-item">15 Lessons: £515 <p>Suitable for customers who need to sit and extended test or have failed a few tests and need a little work to ensure they meet a safe standard</p></li>
+                    <li class = "list-group-item">20 Lessons: £680 <p>Suitable for customers who are part trained, who  are needing work on roundabout, manoeuvres, dual carriageways</p></li>
+                    <li class = "list-group-item">25 Lessons: £835 <p>Suitable for customers who know the basics, understand junction, traffic lights. But haven’t covered roundabouts, complex junctions, manoeuvres</p></li>
+                    <li class = "list-group-item">30 Lessons: £990 <p>Suitable for new automatic customers, or manual customers who have covered turning and emerging to some level of independence</p></li>
+                    <li class = "list-group-item">40 Lessons: £1280 <p>Suitable for anxious customers in the automatic, or manual customers generally just starting out on their driving journey</p></li>
+                    <li class = "list-group-item">50 Lessons: £1500 <p>The full monty, this package will cover most customers from brand new, even the most anxious customers can have confidence in picking this package</p></li>
+                  </ul>
+
+                  <div class = "card-body">
+                    <a href = "contact.php" class = "btn btn-danger">Book Now</a>
+                  </div>
+              
+                </div>
+              </div>
+
+              <div class = "col-md-4 p-5">
+                <div class = "card bg-dark text-light">
+                  <img src = "https://ik.imagekit.io/eccktgb8fra/undraw_Map_dark_re_36sy_RPSjM6jMr.png" alt = "instructor training image">
+                  <div class = "card-body">
+                    <h5 class = "card-title">Instructor training</h5>
+
+                    <p class = "card-text">These are the main lessons that our instructors provide. These are suited to students completely new to driving or simply needing a rework of their driving behaviour. The name comes from how intensive the lessons will be in order to ensure you acheive your practical driving test certificate.</p>
+                  </div>
+
+                  <ul class = "list-group list-group-flush">
+                    <li class = "list-group-item bg-dark text-light">10 Lessons: £325</li>
+                    <li class = "list-group-item bg-dark text-light">15 Lessons: £325</li>
+                    <li class = "list-group-item bg-dark text-light">20 Lessons: £325</li>
+                    <li class = "list-group-item bg-dark text-light">25 Lessons: £325</li>
+                    <li class = "list-group-item bg-dark text-light">30 Lessons: £325</li>
+                    
+                  </ul>
+
+                  <div class = "card-body">
+                    <a href = "instructor-training.html" class = "btn btn-primary text-dark">See more</a>
+                  </div>
+              
+                </div>
+              </div>
+            
+            <div class = "col-md-4 p-5 text-light">
+              <div class = "card bg-primary">
+                <img src = "https://ik.imagekit.io/eccktgb8fra/undraw_towing_6yy4_DdWxmVCMXa.png" alt = "towing image">
+                <div class = "card-body">
+                  <h5 class = "card-title">B and E trailers</h5>
+                  <p class = "card-text">These are the main lessons that our instructors provide. These are suited to students completely new to driving or simply needing a rework of their driving behaviour. The name comes from how intensive the lessons will be in order to ensure you acheive your practical driving test certificate.</p>
+
+                </div>
+                <ul class = "list-group list-group-flush">
+                  <li class = "list-group-item bg-primary text-light">10 Lessons: £325</li>
+                  <li class = "list-group-item bg-primary text-light">15 Lessons: £325</li>
+                  <li class = "list-group-item bg-primary text-light">20 Lessons: £325</li>
+                  <li class = "list-group-item bg-primary text-light">25 Lessons: £325</li>
+                  <li class = "list-group-item bg-primary text-light">30 Lessons: £325</li>
+                  
+                </ul>
+
+                <div class = "card-body">
+                  <a href ="contact.php" class = "btn btn-danger">Book Now</a>
+                </div>
+
+
+              </div>
+            </div>
+
+            
+          </div>
+
+        </section>
+    
+    
+        <section>
+            <div class ="container-fluid bg-dark">
+                <div class = "row align-items-center justify-content-between">
+                    <div class ="col-md p-5 text-light">
+                        <h3><strong>Contact info</strong></h3>
+                        <p>Telephone: 07789660365</p>
+                        <p>Email: Greghillan10@gmail.com</p>
+                        <p>Address: 14 Grougar Drive, Kilmarnock, KA3 1UL</p>
+    
+                        <i class = "bi bi-facebook">
+                            <a href ="https://www.facebook.com/Sandyhillandriving" alt = "Sandy Hillans Facebook Page"></a>
+                        </i>
+    
+                    </div>
+    
+                    <div class ="col-md">
+                        <img class = "img-fluid w-50" src = "img/Untitled design.png" alt ="Certificates">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <script src = "js/bootstrap.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+        <script src = "js/contact.js"></script>
+    </body>
+    
+    </html>
+        

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "css/bootstrap.css" />
+    <!--link to access bootstrap icons-->
+    <link rel="icons" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/bootstrap-icons.svg">
+    <link rel = "stylesheet" href = "css/styles.css">
+
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <!--We have opted to create the navbar and provide the contents within it as a container to provide padding for the brand name-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <!--the first container will be concerned with storing the entire contents of the header, this was opted as container to auto size itself-->
+        <div class="container-fluid">
+
+        
+            <a href="index.html" class="navbar-brand"><img src = "https://ik.imagekit.io/eccktgb8fra/Copy_of_Copy_of_DASH_DOtphMBdd.png" alt ="sandys logo"></a>
+        
+        <!--now we will create a button which whill toggle between two states, we will pass it the continer with our links so it knows what to change-->
+            <button 
+                class="navbar-toggler"
+                type = "button" 
+                data-bs-toggle = "collapse" 
+                data-bs-target = "#navmenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id = "navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a href="prices-1.html" class="navbar-link text-light text-decoration-none"><b>Prices and Services</b></a>
+                    </li>
+                    <li class ="nav-item px-2">
+                        <a href="about.html" class="navbar-link text-light text-decoration-none"><b>About</b></a>
+                    </li>
+
+                    <li class = "nav-item px-2">
+                        <a href="instructor-training.html" class="navbar-link text-light text-decoration-none"><b>Instructor Training</b></a>
+                    </li>
+
+                    <li class = "nav-item px-2">
+                        <a href="contact.php" class="navbar-link text-light text-decoration-none"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        
+        
+    
+    </nav>
+
+
+<!--SHOWCASE-->
+    <!--we will make the text begin from the start on anything below a small screen, once bigger it acts as normal-->
+    <section class="bg-light text-dark p-5 text-center text-sm-start">
+        <div class="container">
+            <!--We are using the flexbox here so that the image and text remain inline, however once on mobile it will return to normal-->
+            <div class = "d-sm-flex">
+                <div>
+                <!--we will include a span with a colour class to this text to keep it inline with the rest of the elements while changing the colour-->
+                    <h1 class = "text-center" style = "font-size: 4vw;"><b>LEARN HOW TO DRIVE WITH ONE OF OUR</b> <b style = "color:blue;">INTENSIVE DRIVING COURSE SPECIALISTS</b>  <b>LET US HELP YOU</b> <b style = "color:blue;">ACHIEVE YOUR GOAL</b> <b>AND</b> <b><i style = "color:red;">DASH </i> TO YOUR LICENSE</b></h1>
+
+                    <!--for easy readability we pass a margin of 4 on each y axis of the paragraph to isolate it-->
+                    <div style = "text-align: center;">
+                    <!--<img class = "img-fluid" src = "img/car.png" alt = "driver logo">-->
+                        <img class = "img-fluid" src = "https://ik.imagekit.io/eccktgb8fra/sandys-car_ob8ZG_VUdB.jpg?updatedAt=1628972726975">
+                    
+                        <div>
+                            <h5 class = "my-4 text-primary">
+                            
+                            <strong>  At Dash Driver Training we share your goal of achieving your driving licence. But that is only one part of of your driving journey.
+                                
+                                We want to ensure you have the necessary skills to make sure you return home to your loved ones every night!
+                                
+                                We pride ourselves on ensuring our customers know how handle a car when things go wrong!
+                                
+                                And trust us they will at some point, but with our training we will work with you to build road knowledge on a variety of roads and conditions. 
+                                
+                                We aim to make you a safe & confident driver for the rest of your driving life!</strong>
+                            </h5>
+                        </div>
+                    <a href = "contact.php"> <button class="btn btn-danger">Enquire Now</button></a>    
+                    </div>
+
+                </div>
+            <!--in order to maintain our image within the conatiner we can give it a width-->
+           
+            </div>
+            <!--<img class = "img-fluid w-50 d-none d-md-block text-center" src = "img/car.png" alt = "driver logo">-->
+        </div>
+    
+    </section>
+
+
+<!--ICONS AND INFO-->
+    <section class = "p-5 bg-secondary">
+<!--we will first create a container within this section to place all cards in-->
+        <div class = "container">
+<!--within that wrapper we can add another wrapper telling each tow to align the text to the center-->
+            <div class = "row text-center">
+<!--next we pass it a breaking point for mobile, when above medium all columns sit beside each toher
+but on mobile all items will be stacked on top-->
+                <div class = "col-md">
+                    <div class = "card bg-light text-dark">
+                        <div class ="card-body text-center">
+
+                            <div class = "h1 mb-3">
+                                <i class = "bi bi-chat-square-dots"></i>
+                            </div>
+                            <h3 class = "card-title mb-3">Helpful instructors</h3>
+                            <p class = "card-text">Many of our customers will tell you how our instructors remain professional whilst also being your emotional support throughout your learning experience. Check out our customer Reviews!
+                            </p>
+
+                            <a href ="https://www.facebook.com/Sandyhillandriving/reviews" class = "btn btn-info">Read more</a>
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col-md">
+                    <div class = "card bg-light text-dark">
+                        <div class = "card-body text-center">
+                            <div class = "h1 mb-3">
+                                <i class ="bi bi-hourglass-bottom"></i>
+                            </div>
+
+                            <h3 class = "card-title mb-3">Effective Lessons</h3>
+                            <p class = "card-text">Each Lesson is specially crafted to meet your specific needs as a learner, from the basics to Pass day we ensure you have expert Advice. Take a look at a typical day with <b>DASH </b> driver training
+                            </p>
+
+                            <a href ="#" class = "btn btn-info">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class = "col-md">
+                    <div class = "card bg-light text-dark">
+                        <div class ="card-body text-center">
+
+                            <div class = "h1 mb-3">
+                                <i class = "bi bi-percent"></i>
+                            </div>
+                            <h3 class = "card-title mb-3">Excellent pass rates</h3>
+                            <p class = "card-text">Our instructors make it their goal to train every individual till <b>they</b> make the decision they would like to take the test! Check out our facebook to see our large gallery of passed students
+
+                            </p>
+
+                            <a href ="https://www.facebook.com/Sandyhillandriving/photos" class = "btn btn-info">Read more</a>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+<!--what we offer-->
+    <section>
+        <div class = "container-fluid">
+            <div class = "row align-items-center justify-content-between">
+
+                <div class = "col-md p-5">
+                    <h2><strong>What we offer</strong></h2>
+                    <p>We offer both manual and automatic lessons. And regularly test in both Cumnock and Irvine & Ayr</p>
+                    <p>Both our prices are <b style = "color:red;">£35 per hour</b>. These are the <b style = "color:red;">intensive course prices</b></p>
+
+                    <p>For a more detailed breakdown of Block Lessons and Discounts</p>
+                </div>
+                <div class = "col-md-6">
+                    <figure>
+                        <img class = "img-fluid" src = "https://ik.imagekit.io/eccktgb8fra/undraw_Vehicle_sale_a645_a6j5j5tS4u.png"
+                        srcset ="https://ik.imagekit.io/eccktgb8fra/undraw_Vehicle_sale_a645_a6j5j5tS4u.png?tr=w-100 300w,
+                        https://ik.imagekit.io/eccktgb8fra/undraw_Vehicle_sale_a645_a6j5j5tS4u.png?tr=w-300 500w,
+                        https://ik.imagekit.io/eccktgb8fra/undraw_Vehicle_sale_a645_a6j5j5tS4u.png?tr=w-500 800w,
+                        https://ik.imagekit.io/eccktgb8fra/undraw_Vehicle_sale_a645_a6j5j5tS4u.png?tr=w-500 1024w" >
+                        
+                                
+
+
+                    </figure>
+                     
+                </div>
+
+            
+                
+        
+
+                <div class = "container text-center">
+                <a href = "prices.html" class = "btn btn-danger text-light m-3">See our Deals</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Getting Prepared-->
+
+    <section id = "prep" class ="bg-info text-dark">
+        <div class = "container">
+            <div class = "row align-items-center justify-content-between">
+                <div class ="col-md p-5">
+                    <h2>Getting Started</h2>
+                    <p>At <b>DASH</b> we understand how daunting taking your first lesson can be, so we compiled a section dedicated to showing you everything you need to know before you begin your Learner journey
+
+                    </p>
+
+                    <p>
+                        We strongly recommend that if you dont already have your provisional license that you take the time to study hard for your theory test. This means when you come to us we can get you booked in and begin your journey to acheiving your <b>Practical Driving Test Certificate</b>
+                    </p>
+               
+
+                    <a href = "#" class = "btn btn-danger mt-3">
+                        <i class ="bi bi-chevron-right">Read more</i>
+                    </a>
+                </div>
+
+                <div class = "col-md">
+                    <img class = "img-fluid d-none d-md-block" src ="https://ik.imagekit.io/eccktgb8fra/travel-train-station_QP8OtwUoo.png?updatedAt=1628756728003"
+                    srcset = "https://ik.imagekit.io/eccktgb8fra/travel-train-station_QP8OtwUoo.png?tr:w-300 500w,
+                    https://ik.imagekit.io/eccktgb8fra/travel-train-station_QP8OtwUoo.png?tr:w-500 800w,
+                    https://ik.imagekit.io/eccktgb8fra/travel-train-station_QP8OtwUoo.png?tr:w-800 1024w">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--FAQ's-->
+    <section id = "Faq" class = "bg-secondary">
+        <div class = "container">
+            <div class = "row align-items-center justify-content-between">
+                <div class = "col-md p-5">
+                    <h2><b>Frequently Asked Questions</b></h2>
+                    <a href = "#" class = "text-dark" alt = "Application for provisional driving license">How to apply for your Provisional Driving license</a> </br>
+                    <a href = "#" class ="text-dark" alt ="Link to apply for Theory test">How to book your Theory Test</a> </br>
+                    <a href = "#" class ="text-dark" alt ="Highway code information">The Highway code manual</a>
+                </div>
+
+                <div class ="col-sm p-5">
+                    <div class = "iframe-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5dZRbU2MiDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer Nav-->
+
+    <section>
+        <div class ="container-fluid bg-dark">
+            <div class = "row align-items-center justify-content-between">
+                <div class ="col-md p-5 text-light">
+                    <h3><strong>Contact info</strong></h3>
+                    <p>Telephone: 07789660365</p>
+                    <p>Email: Greghillan10@gmail.com</p>
+                    <p>Address: 14 Grougar Drive, Kilmarnock, KA3 1UL</p>
+
+                    <i class = "bi bi-facebook">
+                        <a href ="https://www.facebook.com/Sandyhillandriving" alt = "Sandy Hillans Facebook Page"></a>
+                    </i>
+
+                </div>
+
+                <div class = "col-sm">
+                    <img class = "img-fluid w-50" src = "img/Untitled design.png" alt ="Certificates">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src = "js/bootstrap.js"></script>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js"></script>
+    
+</body>
+</html>
